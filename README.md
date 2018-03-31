@@ -22,6 +22,7 @@ I originally used MIDE-51 for development of the bootloader. Now, I would not re
 ![MIDE Setting](https://github.com/MR-DOS/8052-schizoid_demo/PICS/mide_setting.png)
 * The line with name "execute file" should point to program.bat (8052term.exe and hex2bin.exe have to be in the same directory).
 * Parameter 2 specifies number of COM port to which the demoboard is connected.
+* MIDE-51 can be downloaded from [here](http://www.opcube.com/home.html#MIDE51).
 
 ## Technical info
 This "Schizofreny" inspired board uses 128 kB SRAM to emulate 64 kB of ROM and 64 kB of RAM. The program is sent to the board via virtual COM port (CH340G) over USB. Internal bootloader and dedicated circuitry around the 8052 (AT89C52, specifically) handles all of the access to the SRAM during programming. One of the RS232 control signals resets the CPU, another switches it between the bootloader and user mode. Each mode has its own crystal, so the board can be used at any frequency.
@@ -47,3 +48,4 @@ The terminal was written using C (GCC / MinGW) for Windows. It uses RS-232 libra
 ## Known bugs
 * Upon sending the binary to the board, the board responds with some messages saying that the transfer completed. However, prior to that, the board sends one seemingly random character. This is a bug in the main while(1) loop where it waits upon completion of the code loading and then it parses the last character in the buffer as unknown control character and thus is sent back. It has no effect on functionality, but it looks stupid. This should be corrected later.
 * There is no image of the finished board. I will add some later.
+* It looks like the SVG files are shown correctly in Inkscape, but not in LXDE default image viewer. This should be checked.
