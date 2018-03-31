@@ -3,6 +3,7 @@ My own improved implementation of so-called "Schizofreny" 8051 board.You can fin
 
 ## Disclaimer
 I would like to admit this is a very old project back when I was rather beginner at programming. It somehow survived (or, better to say, did not) being moved across several generations of my computers (about 6 notebooks, 3 desktops, one dead HDD and one HDD encrypted due to ransomware) ranging from PIII-M to 3rd gen i5. I had to visit my parents and search my old computer to get the sources of the PC part of the SW, which I thought have been destroyed long ago.
+
 Since this is an old project, it will receive only very limited support from me.
 On the other hand, the project worked and was *usable*. Well, if you call uC with no debug at all usable, that is.
 
@@ -10,11 +11,14 @@ On the other hand, the project worked and was *usable*. Well, if you call uC wit
 ### What this thingumabob consists of
 Hardware: AT89C52 with 256B of internal RAM and bootloader (you can in fact use any 8051, just not 80C31), 64 kB of external ROM and 64 kB of external RAM (can be disabled).
 Bootloader: Handles all of the programming part and communication with PC via virtual COM port over USB.
+
 Terminal on PC: Communicates with the bootloader over USB. You just have to supply it with the HEX file to be programmed and number of the COM port. Originally, this was used to be integrated into MIDE (8051-centric dead simple IDE).
 
 ### How to use it
 Hardware: Just build it, no calibration needed.
+
 Bootloader: Program the 80C52 with the bootloader (you need to have a programmer).
+
 Terminal: Use the batch script program.bat. It converts a HEX file into BIN file, sends it to the board and starts the program. It has two arguments, first is the name of the HEX file, second is number of COM port (just a number, like "5", not "COM5").
 
 ### MIDE-51 integration
