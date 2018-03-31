@@ -19,7 +19,7 @@ Terminal: Use the batch script program.bat. It converts a HEX file into BIN file
 
 ### MIDE-51 integration
 I originally used MIDE-51 for development of the bootloader. Now, I would not recommend the IDE to anyone since it has no autocompletion and next to no connection with the toolchain. However if you wish to use it, here is how to set it up.
-![MIDE Setting](https://github.com/MR-DOS/8052-schizoid_demo/PICS/mide_setting.png)
+![MIDE Setting](https://github.com/MR-DOS/8052-schizoid_demo/blob/master/PICS/mide_setting.png)
 * The line with name "execute file" should point to program.bat (8052term.exe and hex2bin.exe have to be in the same directory).
 * Parameter 2 specifies number of COM port to which the demoboard is connected.
 * MIDE-51 can be downloaded from [here](http://www.opcube.com/home.html#MIDE51).
