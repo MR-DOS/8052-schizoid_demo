@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2020,7 +2020,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="memory-hitachi" package="DIL32" value="" x="105.41" y="43.815" rot="R270">
+<element name="IC1" library="memory-hitachi" package="DIL32" value="628128" x="105.41" y="43.815" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="105.41" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="105.41" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="105.41" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2270,6 +2270,35 @@ design rules under a new name.</description>
 <contactref element="R5" pad="2"/>
 <wire x1="113.03" y1="5.715" x2="120.65" y2="5.715" width="0.4064" layer="16"/>
 <wire x1="120.65" y1="5.715" x2="123.19" y2="8.255" width="0.4064" layer="16"/>
+<polygon width="0.4064" layer="16" isolate="0.4064" rank="4">
+<vertex x="133.985" y="80.01"/>
+<vertex x="124.46" y="80.01"/>
+<vertex x="124.46" y="88.265"/>
+<vertex x="10.16" y="88.265"/>
+<vertex x="10.16" y="78.74"/>
+<vertex x="0" y="78.74"/>
+<vertex x="0" y="10.16"/>
+<vertex x="10.16" y="10.16"/>
+<vertex x="10.16" y="0"/>
+<vertex x="123.825" y="0"/>
+<vertex x="123.825" y="10.16"/>
+<vertex x="133.985" y="10.16"/>
+</polygon>
+<polygon width="0.4064" layer="1" isolate="0.4064" rank="4">
+<vertex x="133.985" y="80.01"/>
+<vertex x="124.46" y="80.01"/>
+<vertex x="124.46" y="88.265"/>
+<vertex x="10.16" y="88.265"/>
+<vertex x="10.16" y="78.74"/>
+<vertex x="0" y="78.74"/>
+<vertex x="0" y="10.16"/>
+<vertex x="10.16" y="10.16"/>
+<vertex x="10.16" y="0"/>
+<vertex x="123.825" y="0"/>
+<vertex x="123.825" y="10.16"/>
+<vertex x="133.985" y="10.16"/>
+</polygon>
+<via x="63.5" y="33.02" extent="1-16" drill="0.8" diameter="1.4224" shape="square"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC2" pad="21"/>
@@ -2635,6 +2664,30 @@ design rules under a new name.</description>
 <via x="123.5075" y="18.7325" extent="1-16" drill="0.8" diameter="1.4224" shape="square"/>
 <wire x1="123.5075" y1="18.7325" x2="122.2375" y2="18.7325" width="0.4064" layer="1"/>
 <wire x1="122.2375" y1="18.7325" x2="121.92" y2="18.415" width="0.4064" layer="1"/>
+<polygon width="0.4064" layer="16" isolate="0.4064">
+<vertex x="51.435" y="88.265"/>
+<vertex x="124.46" y="88.265"/>
+<vertex x="124.46" y="78.74"/>
+<vertex x="133.985" y="78.74"/>
+<vertex x="133.985" y="51.435"/>
+<vertex x="85.725" y="51.435"/>
+<vertex x="85.725" y="78.74"/>
+<vertex x="69.85" y="78.74"/>
+<vertex x="69.85" y="62.23"/>
+<vertex x="51.435" y="62.23"/>
+</polygon>
+<polygon width="0.4064" layer="1" isolate="0.4064">
+<vertex x="51.435" y="88.265"/>
+<vertex x="124.46" y="88.265"/>
+<vertex x="124.46" y="78.74"/>
+<vertex x="133.985" y="78.74"/>
+<vertex x="133.985" y="51.435"/>
+<vertex x="85.725" y="51.435"/>
+<vertex x="85.725" y="78.74"/>
+<vertex x="69.85" y="78.74"/>
+<vertex x="69.85" y="62.23"/>
+<vertex x="51.435" y="62.23"/>
+</polygon>
 </signal>
 <signal name="N$9">
 <contactref element="IC2" pad="30"/>

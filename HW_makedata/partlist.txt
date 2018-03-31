@@ -1,0 +1,50 @@
+Partlist
+
+Exported from schizoid.brd at 3/31/2018 4:59 PM
+
+EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package      Library           Position (inch)       Orientation
+
+C1       33 pF          C025-025X050 rcl               (2.95 0.725)          R180
+C2       33 pF          C025-025X050 rcl               (2.5 0.975)           R270
+C3       33 pF          C025-025X050 rcl               (2.95 0.425)          R0
+C4       33 pF          C025-025X050 rcl               (2.95 0.575)          R0
+C5       10n            C025-025X050 rcl               (1.1 0.5)             R270
+C6       33p            C025-025X050 rcl               (1.175 0.95)          R90
+C7       33p            C025-025X050 rcl               (1.3 0.95)            R90
+C8       10u            C025-025X050 rcl               (1.275 0.275)         R270
+C9       100n           C025-025X050 rcl               (1.1 0.275)           R270
+C10      100n           C025-025X050 rcl               (3.55 0.825)          R0
+C11      100n           C025-025X050 rcl               (2.275 1.025)         R180
+C12      100n           C025-025X050 rcl               (1.225 1.425)         R90
+C13      100n           C025-025X050 rcl               (0.35 2.775)          R0
+C14      100n           C025-025X050 rcl               (2.025 1.2)           R180
+C15      100n           C025-025X050 rcl               (3.075 3.275)         R180
+C16      100n           C025-025X050 rcl               (4.875 2.525)         R180
+C17      100n           C025-025X050 rcl               (3.975 0.825)         R0
+IC1      628128         DIL32        memory-hitachi    (4.15 1.725)          R270
+IC2      AT89S51-33P    DIL40        atmel             (2.1 2.325)           R270
+IC3      74HC573N       DIL20        74xx-eu           (3.4 2.825)           R270
+IC4      4066N          DIL14        40xx              (0.725 2.575)         R270
+IC5      74HC32N        DIL14        74xx-eu           (3.5 0.425)           R270
+IC6      74HC00N        DIL14        74xx-eu           (1.95 0.725)          R270
+IC7      74HCT257N      DIL16        74xx-eu           (4.9 2.025)           R270
+IC8      74HC00N        DIL14        74xx-eu           (4.3 0.425)           R270
+IC9      4066N          DIL14        40xx              (0.725 1.575)         R270
+NORAM                   JP1          jumper            (5.075 0.725)         R270
+P1                      MA08-1       con-lstb          (1.55 2.925)          R270
+P3                      MA08-1       con-lstb          (0.275 2.025)         R270
+R1       1 M            0207/7       rcl               (2.35 0.525)          R180
+R2       1 M            0207/7       rcl               (2.35 0.825)          R180
+R3       220R           0207/7       rcl               (2.35 0.425)          R0
+R4       220R           0207/7       rcl               (2.35 0.725)          R0
+R5       10k            0207/7       rcl               (4.85 0.475)          R270
+RN1                     SIL9         resistor-sil      (2.6 2.875)           R270
+U$1      CH340G         SOIC16       usb-serial        (1.325 0.6)           MR90
+X2       PN61729-S      PN61729-S    con-berg          (0.575 0.625)         R270
+Y1       11,0592 MHz    HC49U-V      SparkFun-FreqCtrl (2.8 0.925)           R180
+Y2       USR            HC49U-V      SparkFun-FreqCtrl (2.7 0.525)           R90
+Y3       12 MHz         HC49U-V      SparkFun-FreqCtrl (0.975 0.85)          R270
